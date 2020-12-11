@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>chart</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="reportsPage">
+
+
+    <div class="wrapper">
+		<nav id="sidebar">
+			<div class="sidebar-header">
+				<h2>Jobs</h2>
+			</div>
+			
+			
+			<ul class="list-unstyled components">
+				<p>people also search for</p>
+				 <li >
+					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+					<ul class="collapse list-unstyled" id="homeSubmenu">
+						<li>
+							<a href="#">1</a>
+						</li>
+						<li>
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a href="#">3</a>
+						</li>
+					</ul> 
+				</li>
+				<!--
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Page</a>
+					<ul class="collapse list-unstyled" id="pageSubmenu">
+						<li>
+							<a href="#">page1</a>
+						</li>
+						<li>
+							<a href="#">page2</a>
+						</li>
+						<li>
+							<a href="#">page3</a>
+						</li>
+					</ul> 
+				</li> -->
+				<li>
+					<a href="#" onclick="fun1()">Cyber Security</a>
+				</li>
+				<li>
+					<a href="#" onclick="fun2()">Data Scientist</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<div class="content">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			
+			<button type="button" id="sidebarCollapse" class="btn btn-info">
+				<i class="fa fa-align-justify"></i> 
+			</button>
+				 
+			 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				 <span class="navbar-toggler-icon"></span>
+			 </button>
+			 
+			 <div class="collapse navbar-collapse" id="navbarNav">
+				 <ul class="navbar-nav ml-auto">
+				   <li class="nav-item active">
+					 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				   </li>
+				   <li class="nav-item">
+					 <a class="nav-link" href="#">Features</a>
+				   </li>
+				   <li class="nav-item">
+					 <a class="nav-link" href="#">Pricing</a>
+				   </li>
+				   <li class="nav-item">
+					 <a class="nav-link disabled" href="#">Disabled</a>
+				   </li>
+				 </ul>
+			 </div>
+		 	</nav>
+	   
+	   
+			<div class="content-wrapper">
+                <div class="" id="home">
+       
+                    <div >
+                        <div class="row tm-content-row">
+            
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+                                <div class="tm-bg-primary-dark tm-block tm-block-taller tm-block-overflow">
+                                    <h2 class="tm-block-title">Basic Information</h2>
+                                    <div class="tm-basicInfo ">
+                                        
+                                        <div class="tm-basicInfo-item">
+                                            <div>
+                                                Job name = <span id="jobname">XYZ</span>
+                                            </div>
+                                        </div>
+                                        <div class="tm-basicInfo-item">
+                                            <div>
+                                                Basic Salary = <span id="salary">999999</span>
+                                            </div>
+                                        </div>
+                                        <div class="tm-basicInfo-item">
+                                            <div>
+                                                Vacancey Per year = <span id="vacancey">1000</span>
+                                            </div>
+                                        </div>
+                                        <div class="tm-basicInfo-item">
+                                            <div>
+                                                Required Basic skill = <span id="skills">Front-end</span>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+                                <div class="tm-bg-primary-dark tm-block tm-block-taller">
+                                    <h2 class="tm-block-title">Salary as per country</h2>
+                                    <div id="pieChartContainer">
+                                        <canvas id="pieChart" class="chartjs-render-monitor" width="200" height="200"></canvas>
+                                    </div>                        
+                                </div>
+                            </div>
+                            <div class="col-12 tm-block-col">
+                                <div class="tm-bg-primary-dark tm-block tm-block-taller tm-block-scroll">
+                                    <h2 class="tm-block-title">Job description</h2>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+                                            <img src="img/1.png" class="d-flex mr-auto ml-auto" id="jobImg">
+                                        </div>
+                                        <div class="description col-sm-12 col-md-12 col-lg-6 col-xl-6 " id="jobDesc">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quia aperiam obcaecati nemo cum ex dolores repudiandae officia, nisi quae eligendi, culpa quidem provident beatae voluptas qui facilis! Accusantium dolorem itaque asperiores blanditiis nemo rerum illo iste non, ab eum dolores optio possimus eius deleniti a neque hic explicabo eligendi! Eligendi beatae maxime, officiis molestias voluptatibus, quasi vel tempora harum possimus voluptates minus, nihil temporibus at? Cumque velit distinctio repudiandae impedit? Adipisci, ab reprehenderit! Aliquid amet laudantium exercitationem ut, eius ratione quisquam dolore! Dolor id nobis, culpa incidunt qui veniam, aperiam libero, sapiente nesciunt fugiat quod. Adipisci autem dicta ex.
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+                                <div class="tm-bg-primary-dark tm-block">
+                                    <h2 class="tm-block-title">increase in salary as per experience</h2>
+                                    <canvas id="lineChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+                                <div class="tm-bg-primary-dark tm-block">
+                                    <h2 class="tm-block-title">people who persue this as a future</h2>
+                                    <canvas id="barChart"></canvas>
+                                </div>
+                            </div> 
+                        </div>
+                    </div> 
+                </div>
+		  </div> 
+	   
+		</div>
+    </div>
+    
+    
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script src="js/moment.min.js"></script>
+
+    <script src="js/Chart.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/index.js"></script>
+    <script>
+        Chart.defaults.global.defaultFontColor = 'white';
+        let ctxLine,
+            ctxBar,
+            ctxPie,
+            optionsLine,
+            optionsBar,
+            optionsPie,
+            configLine,
+            configBar,
+            configPie,
+            lineChart,
+        barChart, pieChart;
+        
+        let side = document.getElementById("sidebar");
+		$(document).ready(function(){
+			$("#sidebarCollapse").on('click', function(){
+				$("#sidebar").toggleClass('active');
+			})
+		});
+        
+        $(function () {
+            drawLineChart(); // Line Chart
+            drawBarChart(); // Bar Chart
+            drawPieChart(); // Pie Chart
+
+            $(window).resize(function () {
+                updateLineChart();
+                updatePieChart();
+                updateBarChart();                
+            });
+        })
+    </script>
+</body>
+
+</html>
