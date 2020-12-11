@@ -57,7 +57,7 @@ function loadDoc1() {
 
       }
   };
-  xhttp.open("GET", "js/data.json", false);
+  xhttp.open("GET", "Js/data.json", false);
   xhttp.send();
 }
 console.log(mydata);
